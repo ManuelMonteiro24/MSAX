@@ -1,0 +1,24 @@
+accuracy_score: 0.9011220196353437 dataset_name: uWave #atributes: 3 ts_length: 315 metric_name: min_dist n_segments: 150 alphabet_size: 6 sax_multivariate_output
+accuracy_score: 0.22 dataset_name: LP1 #atributes: 6 ts_length: 15 metric_name: min_dist n_segments: 10 alphabet_size: 2 sax_multivariate_output
+accuracy_score: 0.5 dataset_name: LP2 #atributes: 6 ts_length: 15 metric_name: min_dist n_segments: 10 alphabet_size: 2 sax_multivariate_output
+accuracy_score: 0.43333333333333335 dataset_name: LP3 #atributes: 6 ts_length: 15 metric_name: min_dist n_segments: 10 alphabet_size: 2 sax_multivariate_output
+accuracy_score: 0.2 dataset_name: LP4 #atributes: 6 ts_length: 15 metric_name: min_dist n_segments: 10 alphabet_size: 2 sax_multivariate_output
+accuracy_score: 0.23 dataset_name: LP5 #atributes: 6 ts_length: 15 metric_name: min_dist n_segments: 10 alphabet_size: 2 sax_multivariate_output
+accuracy_score: 0.2 dataset_name: LP4 #atributes: 6 ts_length: 15 metric_name: min_dist n_segments: 10 alphabet_size: 2
+accuracy_score: 0.06666666666666667 dataset_name: Libras #atributes: 2 ts_length: 45 metric_name: min_dist n_segments: 20 alphabet_size: 3
+accuracy_score: 0.06666666666666667 dataset_name: Libras #atributes: 2 ts_length: 45 metric_name: min_dist n_segments: 20 alphabet_size: 3
+accuracy_score: 0.06666666666666667 dataset_name: Libras #atributes: 2 ts_length: 45 metric_name: min_dist n_segments: 20 alphabet_size: 3
+accuracy_score: 0.10400299289188178 dataset_name: Pendigits #atributes: 2 ts_length: 8 metric_name: min_dist n_segments: 4 alphabet_size: 2
+accuracy_score: 0.33 dataset_name: ECG_CUTTED #atributes: 2 ts_length: 39 metric_name: min_dist n_segments: 15 alphabet_size: 2
+accuracy_score: 0.10400299289188178 dataset_name: Pendigits #atributes: 2 ts_length: 8 metric_name: min_dist n_segments: 4 alphabet_size: 2
+accuracy_score: 0.06666666666666667 dataset_name: Libras #atributes: 2 ts_length: 45 metric_name: min_dist n_segments: 20 alphabet_size: 2
+accuracy_score: 0.33 dataset_name: ECG_CUTTED #atributes: 2 ts_length: 39 metric_name: min_dist n_segments: 20 alphabet_size: 2
+accuracy_score: 0.06098514464425332 dataset_name: CharacterTrajectories_CUTTED #atributes: 3 ts_length: 109 metric_name: min_dist n_segments: 20 alphabet_size: 2
+accuracy_score: 0.12508767827916764 dataset_name: uWave #atributes: 3 ts_length: 315 metric_name: min_dist n_segments: 200 alphabet_size: 2
+accuracy_score: 0.06666666666666667 dataset_name: Libras #atributes: 2 metric_name: min_dist n_segments: 20 alphabet_size: 2
+accuracy_score: 0.37777777777777777 dataset_name: Libras #atributes: 2 metric_name: min_dist n_segments: 22 alphabet_size: 10
+accuracy_score: 0.7055555555555556 dataset_name: Libras #atributes: 2 metric_name: euclidean
+accuracy_score: 0.8111111111111111 dataset_name: Libras #atributes: 2 metric_name: dtw
+accuracy_score: 0.7222222222222222 dataset_name: Libras #atributes: 2 metric_name: min_dist n_segments: 22 alphabet_size: 10 sax_multivariate_output
+accuracy_score: 0.8038720538720538 dataset_name: Pendigits #atributes: 2 metric_name: min_dist n_segments: 4 alphabet_size: 10 sax_multivariate_output
+accuracy_score: 0.42639356528245415 dataset_name: Pendigits #atributes: 2 metric_name: min_dist n_segments: 4 alphabet_size: 10
