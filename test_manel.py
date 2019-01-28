@@ -90,4 +90,4 @@ if mode == "several_tests":
     for list_element in test_list:
         test_multivariate_methods(list_element[0],list_element[1],list_element[2],list_element[3],list_element[4])
 else:
-    test_multivariate_methods("DATASETS/SYNTETICS/syntetic_data_2","min_dist",10,5,None)
+    test_multivariate_methods("DATASETS/SYNTETICS/syntetic_data_2","min_dist",5,10,None)
