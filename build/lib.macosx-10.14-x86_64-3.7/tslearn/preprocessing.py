@@ -37,6 +37,7 @@ def multivariate_normalization(data,variables_size):
             means.append(numpy.mean(data[u][j]))
             ts_s.append(data[u][j])
         covariance_matrix = mpmath.matrix(numpy.cov(ts_s))
+        #print("cov from ts number: ", j, "\n" ,numpy.cov(ts_s))
         w, v= mpmath.eig(covariance_matrix)
         diagonal = mpmath.diag(w)
 

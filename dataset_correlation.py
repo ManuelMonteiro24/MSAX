@@ -61,8 +61,8 @@ def dataset_correlation(dataset_name):
     X_train, y_train, X_test, y_test, variables = read_dataset_from_file(dataset_name)
     X_train = separate_atributes_dataset(X_train,variables)
     X_test = separate_atributes_dataset(X_test,variables)
-    X_train = z_normalize(X_train,variables)
-    X_test = z_normalize(X_test,variables)
+    #X_train = z_normalize(X_train,variables)
+    #X_test = z_normalize(X_test,variables)
 
     covariance_matrix_infos(dataset_name,[X_train, X_test],variables)
     return
@@ -70,8 +70,8 @@ def dataset_correlation(dataset_name):
 
 
 
-if 1 == 0:
-    dataset_correlation("DATASETS/ECG_CUTTED")
+if 0 == 0:
+    dataset_correlation("DATASETS/SYNTETICS_R/variables_2_covar_identity")
 else:
     datasets = ["CharacterTrajectories_CUTTED","uWave","Libras","Pendigits",
     "ECG_CUTTED","AUSLAN_CUTTED_CONST_ELIMINATED","JapaneseVowels_CUTTED_CONST_ELIMINATED",
