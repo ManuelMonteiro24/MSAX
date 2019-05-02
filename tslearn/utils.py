@@ -7,13 +7,32 @@ from decimal import *
 
 __author__ = 'Romain Tavenard romain.tavenard[at]univ-rennes2.fr'
 
-def write_discretized_dataset(datasets,class_arrays,output_file_str):
+
+
+def write_dataset(datasets,class_arrays,output_file_str):
     dirname = os.path.abspath(os.path.dirname(sys.argv[0]))
     file_location =  dirname + "/" + output_file_str
-    train_test_str = ["_TRAIN_DISCRETIZED","_TEST_DISCRETIZED"]
+    train_test_str = ["_TRAIN","_TEST"]
+
+
+    for u in range(0,2): # iteration over train and test dataset
+        new_file_location = file_location + train_test_str[u]
+        with open(new_file_location, "w") as myfile:
+            for i in range(0,len(datasets[u][0])): #iteration over ts
+                for j in range(0,len(datasets[u][0][i])): #iteration over ts value
+                    myfile.write(str(i+1) + " " + str(j+1) + " " + str(class_arrays[u][i]))
+                    for atribute_iterator in range(0,len(datasets[0])): # iteration over attributes
+                        myfile.write(" " + str(datasets[u][atribute_iterator][i][j]))
+                    myfile.write("\n")
+    return
+
+def write_multivar_discretized_dataset(datasets,class_arrays,output_file_str):
+    dirname = os.path.abspath(os.path.dirname(sys.argv[0]))
+    file_location =  dirname + "/" + output_file_str
+    train_test_str = ["_TRAIN","_TEST"]
     for u in range(0,2):
-        file_location = file_location + train_test_str[u]
-        with open(file_location, "w") as myfile:
+        new_file_location = file_location + train_test_str[u]
+        with open(new_file_location, "w") as myfile:
             for i in range(0,len(datasets[u])):
                 for j in range(0,len(datasets[u][i])):
                     myfile.write(str(i+1) + " " + str(j+1) + " " + str(class_arrays[u][i]) + " " + datasets[u][i][j] + "\n")

@@ -25,6 +25,18 @@ def z_normalize(dataset,variables_size):
                 dataset[u][j][i] = numpy.array([(dataset[u][j][i] - mean)/variance])
     return dataset
 
+
+def print_covar_matrix(data,variables_size):
+    for j in range(0,len(data[0])):
+        means = []
+        ts_s = []
+        for u in range(0,variables_size):
+            means.append(numpy.mean(data[u][j]))
+            ts_s.append(data[u][j])
+        covariance_matrix = mpmath.matrix(numpy.cov(ts_s))
+        print("cov from ts number: ", j, "\n" ,numpy.cov(ts_s))
+    return
+
 #do this after separate_atributes_dataset
 #running for several Attributes
 #resolves dependencies between variables!
